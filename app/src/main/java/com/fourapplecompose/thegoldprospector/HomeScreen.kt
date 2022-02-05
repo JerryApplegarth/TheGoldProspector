@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates
+package com.fourapplecompose.thegoldprospector
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -19,7 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.fourapplecompose.navigationtemplates.ui.theme.mediumGreen
+import com.fourapplecompose.thegoldprospector.ui.theme.mediumGreen
 
 @Composable
 fun HomeScreen(navController: NavController) {

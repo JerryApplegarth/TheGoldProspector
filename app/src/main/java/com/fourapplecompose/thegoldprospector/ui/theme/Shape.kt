@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates.ui.theme
+package com.fourapplecompose.thegoldprospector.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

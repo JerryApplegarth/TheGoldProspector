@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates
+package com.fourapplecompose.thegoldprospector
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button

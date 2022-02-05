@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates.ui.theme
+package com.fourapplecompose.thegoldprospector.ui.theme
 
 import androidx.compose.material.Colors
 import androidx.compose.runtime.Composable

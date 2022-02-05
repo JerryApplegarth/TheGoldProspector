@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates
+package com.fourapplecompose.thegoldprospector
 
 import android.view.animation.OvershootInterpolator
 import androidx.compose.animation.core.Animatable
@@ -25,7 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.fourapplecompose.navigationtemplates.ui.theme.fontColor
+import com.fourapplecompose.thegoldprospector.ui.theme.fontColor
 
 import kotlinx.coroutines.delay
 

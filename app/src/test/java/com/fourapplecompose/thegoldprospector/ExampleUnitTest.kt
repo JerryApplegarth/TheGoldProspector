@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates
+package com.fourapplecompose.thegoldprospector
 
 import org.junit.Test
 

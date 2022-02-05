@@ -1,4 +1,4 @@
-package com.fourapplecompose.navigationtemplates
+package com.fourapplecompose.thegoldprospector
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.fourapplecompose.navigationtemplates.ui.theme.NavigationTemplatesTheme
+import com.fourapplecompose.thegoldprospector.ui.theme.NavigationTemplatesTheme
 
 
 class MainActivity : ComponentActivity() {
