@@ -19,6 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.fourapplecompose.thegoldprospector.screens.AppLogo
 import com.fourapplecompose.thegoldprospector.screens.Screen
 import com.fourapplecompose.thegoldprospector.ui.theme.mediumGreen
 
@@ -130,55 +131,9 @@ fun ImageCard(
         AppLogo()
 
     }
+
 }
 
 
 
 
-    @Composable
-    fun AppLogo() {
-        Column(
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Spacer(modifier = Modifier.height(24.dp))
-            Text(
-                text = stringResource(id = R.string.app_produced_by)
-            )
-            Text(
-                text = stringResource(R.string.apple_apps),
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colors.mediumGreen
-            )
-            Image(
-                painter = painterResource(
-                    id = R.drawable.four_apple_bmp
-                ),
-                contentDescription = stringResource(R.string.apple_logo),
-                Modifier.size(30.dp)
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = stringResource(R.string.enjoyed_app),
-                modifier = Modifier.padding(8.dp)
-
-            )
-            Text(text = stringResource(R.string.you_can_buy))
-            Text(
-                text = stringResource(R.string.but_me_coffee),
-                modifier = Modifier.padding(4.dp)
-            )
-            Text(
-                text = stringResource(R.string.http_address),
-                color = MaterialTheme.colors.secondaryVariant,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold,
-                fontStyle = FontStyle.Italic
-            )
-
-        }
-
-
-
-
-    }

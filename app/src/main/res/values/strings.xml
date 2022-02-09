@@ -2,11 +2,10 @@
     <string name="app_name">The Gold Prospector</string>
 
     // My Logo
-    <string name="app_produced_by">This app produced by</string>
+
     <string name="apple_apps">"Applegarth's Apps"</string>
-    <string name="enjoyed_app">"If you enjoyed this app, "</string>
-    <string name="you_can_buy">"you can buy me a coffee."</string>
-    <string name="but_me_coffee">"Buy me a Coffee @ "</string>
+
+    <string name="buy_me_coffee">"Buy me a Coffee "</string>
     <string name="http_address"> "https://www.buymeacoffee.com/JerryApplegarth "</string>
     <string name="apple_logo">"Apple Logo"</string>
 
