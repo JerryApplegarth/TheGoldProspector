@@ -8,6 +8,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.fourapplecompose.thegoldprospector.screens.Screen
 
 @Composable
 fun Details(navController: NavController) {

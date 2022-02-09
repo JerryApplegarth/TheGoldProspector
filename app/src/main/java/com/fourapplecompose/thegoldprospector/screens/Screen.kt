@@ -1,4 +1,4 @@
-package com.fourapplecompose.thegoldprospector
+package com.fourapplecompose.thegoldprospector.screens
 
 sealed class Screen(val route: String) {
     object SplashScreen: Screen(route = "splash_screen")
