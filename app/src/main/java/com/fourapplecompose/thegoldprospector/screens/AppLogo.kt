@@ -30,7 +30,7 @@ fun AppLogo() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(8.dp),
+            .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -51,51 +51,49 @@ fun AppLogo() {
             text = stringResource(R.string.buy_me_coffee),
             modifier = Modifier.padding(4.dp)
         )
-        Row(
-            modifier = Modifier
-                .padding(8.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Center
-        ) {
 
-            val annotatedLinkString: AnnotatedString = buildAnnotatedString {
 
-                val str = "Buy me a Coffee"
-                val startIndex = str.indexOf("Coffee")
-                val endIndex = startIndex + 6
-                append(str)
-                addStyle(
-                    style = SpanStyle(
-                        color = Color(0xff64B5F6),
-                        fontSize = 18.sp,
+        val annotatedLinkString: AnnotatedString = buildAnnotatedString {
 
-                        textDecoration = TextDecoration.Underline
-                    ), start = startIndex, end = endIndex
-                )
-                addStringAnnotation(
-                    tag = "URL",
-                    annotation = "https://www.buymeacoffee.com/JerryApplegarth",
-                    start = startIndex,
-                    end = endIndex
-                )
-            }
+            val str = "Buy me a Coffee "
+            val startIndex = str.indexOf("Coffee")
+            val endIndex = startIndex + 6
+            append(str)
+            addStyle(
+                style = SpanStyle(
+                    color = Color(0xff64B5F6),
+                    fontSize = 18.sp,
 
-            val uriHandler = LocalUriHandler.current
-            ClickableText(
-                modifier = Modifier
-                    .padding(16.dp)
-                    .fillMaxWidth(),
-                text = annotatedLinkString,
-                onClick = {
-                    annotatedLinkString
-                        .getStringAnnotations("URL", it, it)
-                        .firstOrNull()?.let { stringAnnotation ->
-                            uriHandler.openUri(stringAnnotation.item)
-                        }
-                })
+                    textDecoration = TextDecoration.Underline
+                ), start = startIndex, end = endIndex
+            )
+            addStringAnnotation(
+                tag = "URL",
+                annotation = "https://www.buymeacoffee.com/JerryApplegarth",
+                start = startIndex,
+                end = endIndex
+            )
         }
+
+        val uriHandler = LocalUriHandler.current
+        ClickableText(
+            modifier = Modifier
+                .padding(start = 124.dp, end = 8.dp)
+                .fillMaxWidth()
+                .align(Alignment.CenterHorizontally),
+
+            text = annotatedLinkString,
+
+            onClick = {
+                annotatedLinkString
+                    .getStringAnnotations("URL", it, it)
+                    .firstOrNull()?.let { stringAnnotation ->
+                        uriHandler.openUri(stringAnnotation.item)
+                    }
+            })
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable

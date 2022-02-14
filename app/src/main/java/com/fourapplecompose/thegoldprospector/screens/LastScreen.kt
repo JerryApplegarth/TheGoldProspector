@@ -1,4 +1,4 @@
-package com.fourapplecompose.thegoldprospector
+package com.fourapplecompose.thegoldprospector.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
