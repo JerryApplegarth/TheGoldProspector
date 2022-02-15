@@ -1,13 +1,12 @@
 package com.fourapplecompose.thegoldprospector.screens
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.fourapplecompose.thegoldprospector.screens.Screen
 
@@ -23,18 +22,29 @@ fun LastScreen(navController: NavController) {
         }) {
             Text(text = "Home")
         }
+        Spacer(
+            modifier = Modifier
+                .height(24.dp)
+        )
+
+        Button(onClick = {
+            navController.navigate(Screen.GoldPrices.route)
+        }) {
+            Text(text = "Gold Prices")
+        }
+        Spacer(
+            modifier = Modifier
+                .height(24.dp)
+        )
+        Button(onClick = {
+            navController.navigate(Screen.Details.route)
+        }) {
+            Text(text = "Detail Screen")
+        }
+
 
     }
-    Button(onClick = {
-        navController.navigate(Screen.GoldPrices.route)
-    }) {
-        Text(text = "Gold Prices")
-    }
-    Button(onClick = {
-        navController.navigate(Screen.Details.route)
-    }) {
-        Text(text = "Detail Screen")
-    }
+
 
 
 }
