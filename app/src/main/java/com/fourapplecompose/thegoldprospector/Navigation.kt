@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.fourapplecompose.thegoldprospector.model.Gold
 import com.fourapplecompose.thegoldprospector.screens.*
+import com.fourapplecompose.thegoldprospector.viewModel.GoldViewModel
 
 
 @Composable
@@ -21,7 +22,7 @@ fun Navigation() {
             HomeScreen(navController = navController)
         }
         composable(route = Screen.GoldPrices.route) {
-            GoldPrices(navController = navController, gold = Gold(usd = Int, xau = Double.Companion, xag = Double.Companion))
+            GoldPrices(navController = navController, Gold(usd = Int.Companion, xag = Double.Companion, xau = Double.Companion))
         }
         composable(route = Screen.Details.route) {
             Details(navController = navController)

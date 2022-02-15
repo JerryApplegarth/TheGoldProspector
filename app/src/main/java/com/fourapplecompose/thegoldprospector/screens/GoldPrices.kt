@@ -27,9 +27,22 @@ fun GoldPrices(navController: NavController, gold: Gold) {
         }) {
             Text(text = "Detail Screen")
         }
+
         Spacer(modifier = Modifier.height(24.dp))
         Text(
-            text = "Country: ${gold.usd} Gold: ${gold.xau} Silver: ${gold.xag}",
+            text = "Country: ${gold.usd} ",
+            style = MaterialTheme.typography.subtitle1,
+            fontWeight = FontWeight.Bold
+        )
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = "Gold: ${gold.xau} ",
+            style = MaterialTheme.typography.subtitle1,
+            fontWeight = FontWeight.Bold
+        )
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = "Silver: ${gold.xag}",
             style = MaterialTheme.typography.subtitle1,
             fontWeight = FontWeight.Bold
         )
