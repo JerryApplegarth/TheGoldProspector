@@ -1,7 +1,7 @@
 package com.fourapplecompose.thegoldprospector.model
 
 data class Gold(
-    val usd: String,
-    val xau: Double,
-    val xag: Double
+    val usd: Int.Companion,
+    val xau: Double.Companion,
+    val xag: Double.Companion
 )

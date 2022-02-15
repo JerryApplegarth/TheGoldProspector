@@ -2,16 +2,18 @@ package com.fourapplecompose.thegoldprospector.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.fourapplecompose.thegoldprospector.screens.Screen
+import com.fourapplecompose.thegoldprospector.model.Gold
 
 @Composable
-fun GoldPrices(navController: NavController) {
+fun GoldPrices(navController: NavController, gold: Gold) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -25,9 +27,17 @@ fun GoldPrices(navController: NavController) {
         }) {
             Text(text = "Detail Screen")
         }
+        Spacer(modifier = Modifier.height(24.dp))
+        Text(
+            text = "Country: ${gold.usd} Gold: ${gold.xau} Silver: ${gold.xag}",
+            style = MaterialTheme.typography.subtitle1,
+            fontWeight = FontWeight.Bold
+        )
+
 
     }
 
 
 
 }
+
